@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+</head>
+<body>
+
+    <nav id="desktopNav">
+        <div class="logo">Saniya Jani</div>
+        <div>
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburgerNav">
+        <div class="logo">Saniya Jani</div>
+        <div class="hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <div class="menuLinks">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_ImgContainer">
+            <img src="./assets/saniyapicture.png" alt="Saniya Jani">
+        </div>
+
+        <div class="section_Text">
+            <p class="section_Text_p1">Hello, I'm</p>
+            <h1 class="title">Saniya Jani</h1>
+            <p class="section_Text_p2">Frontend Developer</p>
+            
+            <div class="btnContainer">
+                <button class="btn btnColor1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            
+                <button class="btn btnColor2" onclick="window.open('./assets/SaniyaJaniResume (1).pdf')">
+                    Resume
+                </button>
+            
+                <button class="linkedinBtn" onclick="window.open('https://www.linkedin.com/in/saniyajani/', '_blank')">
+                    <img src="./assets/linkedin.png" alt="linkedin" class="icon" />
+                </button>       
+            </div>
+
+            <!-- <div class="socialsContainer">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/saniyajani/'">
+            </div> -->
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_Text_p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="sectionContainer">
+            <div class="section_ImgContainer">
+                <img src="./assets/download.jpg" alt="Anout me pic 2" class="aboutPic">
+            </div>
+            <div class="aboutDetailsContainer">
+                <div class="aboutContainers">
+                    <div class="detailsContainer">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Fresher <br> Frontend Developer</p>
+                    </div>
+                    <div class="detailsContainer">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.tech <br>Compter Science</p>
+                    </div>
+                </div>
+                <div class="textContainer">
+                    <p>Hello! I'm Saniya Jani, a Computer Science graduate passionate about coding, UX design, and innovation. I combine technical expertise and creativity to deliver impactful, user-focused solutions. Committed to continuous learning, I aim to excel as a Software Engineer and UX Designer, contributing meaningfully to every project I undertake.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="experience">
+        <p class="section_Text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="sectContiners">
+        <div class="experienceDetailsContainer">
+                <div class="detailsContainer">
+                    <h2 class="experienceSubTitle">Frontend Development</h2>
+                    <div class="articleContainer">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" alt="icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <section id="project">
+        <p class="section_Text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projectDetailsContainer">
+            <div class="aboutContainers">
+                <div class="detailsContainer">
+                    <img src="./assets/project-1.png" alt="project Image" class="projectImage">
+                    <h3>Project 1</h3>
+                    <p class="projectPara">A Work Portfolio</p>
+                    <button class="projectBtn ">Open</button>
+                </div>
+                <div class="detailsContainer">
+                    <img src="./assets/project-2.png" alt="project Image" class="projectImage">
+                    <h3>Project 2</h3>
+                    <p class="projectPara">A Blogging Website</p>
+                    <button class="projectBtn ">Open</button>
+                </div>
+                <div class="detailsContainer">
+                    <img src="./assets/project-3.png" alt="project Image" class="projectImage">
+                    <h3>Project 3</h3>
+                    <p class="projectPara">Animted website</p>
+                    <button class="projectBtn">Open</button>
+                </div>
+            </div>
+            <h3>Projects are under Development !</h3>
+            <p>Buttons my not direct to path.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section_Text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon " class="contactIcon"/>
+            <p><a href="mailto:saniyajani@gmail.com">Saniyajani@gmail.com</a></p>
+          </div>
+
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="contactIcon emlbtn">
+            <p><a href="'https://www.linkedin.com/in/saniyajani/', '_blank'">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <nav>
+          <div class="navLinksContainer">
+            <ul class="navLinks">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Saniya Jani. All Rights Reserved.</p>
+      </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
